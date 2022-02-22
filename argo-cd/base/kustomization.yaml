@@ -6,3 +6,6 @@ resources:
 - github.com/argoproj/argo-cd/manifests/base
 - github.com/argoproj/argo-cd/manifests/cluster-rbac/
 namespace: argocd
+
+patchesStrategicMerge:
+- ./patches/argocd-app-health-status.yaml
